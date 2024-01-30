@@ -11,6 +11,12 @@ html {
     scroll-behavior: smooth;
 }
 
+.row {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
 nav {
     background-color: rgba(0, 0, 0, 0.925);
     height: 80px;
@@ -80,6 +86,7 @@ a {
 
 .nav__link--anchor-primary:hover {
     color:rgba(255, 255, 255, 0.961);
+    border: 2px solid gold;
     transition: all 300ms ease;
     transform: scale(1.03);
 }
@@ -133,6 +140,7 @@ i {
 
 .fas {
     color: gold;
+    padding-bottom: 8px;
 }
 
 .landing__description--title {
@@ -250,7 +258,8 @@ button:hover {
 }
 
 .about__title,
-.use__title {
+.use__title,
+.shop__title {
     color: rgba(0, 0, 0, 0.735);
     font-size: 18px;
     font-weight: 600;
@@ -259,7 +268,8 @@ button:hover {
 }
 
 .about__subtitle,
-.use__subtitle {
+.use__subtitle,
+.shop__subtitle {
     font-size: 48px;
     font-weight: 700;
     padding-bottom: 16px;
@@ -385,4 +395,78 @@ button:hover {
 .use__item--description-title {
     padding-bottom: 8px;
     font-size: 16px;
+}
+
+/* 
+
+SHOP
+
+*/
+
+.shop__container {
+    padding: 60px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.shop__title {
+    padding-top: 32px;
+}
+
+.shop__title,
+.shop__subtitle  {
+    text-align: center;
+}
+
+.shop__subtitle {
+    padding-bottom: 24px;
+}
+
+.shop__items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+    padding-left: 56px;
+}
+
+.shop__item {
+    width: 30%;
+}
+
+.shop__item:hover .shop__img {
+    transform: scale(1.03);
+}
+
+.shop__img--wrapper {
+    margin-bottom: 8px;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.shop__img {
+    max-height: 300px;
+    transition: all 300ms ease;
+    cursor: not-allowed;
+}
+
+.shop__item--title {
+    color: rgba(0, 0, 0, 0.655);
+    width: 200px;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 8px 0;
+}
+
+.shop__item--title:hover {
+    text-decoration: underline;
+    cursor: not-allowed;
+}
+
+.item__price--normal {
+    color: lightgrey;
+    text-decoration: line-through;
+    padding-right: 8px;
 }
