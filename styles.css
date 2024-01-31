@@ -215,7 +215,8 @@ button:hover {
 /*  ABOUT */
 
 .about__container,
-.use__container {
+.use__container,
+.testimonials__container {
     padding: 40px 24px;
     width: 100%;
     max-width: 1200px;
@@ -259,7 +260,8 @@ button:hover {
 
 .about__title,
 .use__title,
-.shop__title {
+.shop__title,
+.testimonials__title {
     color: rgba(0, 0, 0, 0.735);
     font-size: 18px;
     font-weight: 600;
@@ -269,7 +271,8 @@ button:hover {
 
 .about__subtitle,
 .use__subtitle,
-.shop__subtitle {
+.shop__subtitle,
+.testimonials__subtitle {
     font-size: 48px;
     font-weight: 700;
     padding-bottom: 16px;
@@ -457,6 +460,7 @@ SHOP
 
 .shop__item {
     width: 30%;
+    text-align: left;
 }
 
 .shop__item:hover .shop__img {
@@ -492,4 +496,101 @@ SHOP
     color: lightgrey;
     text-decoration: line-through;
     padding-right: 8px;
+}
+
+.buy__btn {
+    margin-top: 16px;
+    border-radius: 8px;
+}
+
+/* 
+
+TESTIMONIALS
+
+*/
+
+#testimonials {
+    background-color: #e0d2b4;
+    background-image: linear-gradient(315deg, #e0d2b4 0%, #e2ac6b 74%);
+}
+
+.testimonials__row {
+    text-align: center;
+}
+
+.testimonials__subtitle {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.slideshow--wrapper-mini {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.slideshow__img {
+    width: 70px;
+}
+
+.quote--title {
+    letter-spacing: .04rem;
+    color: gold;
+    padding-bottom: 16px;
+}
+
+.quote--para {
+    width: 380px;
+    padding: 0 16px;
+    line-height: 1.5;
+}
+
+.testimonials__ratings {
+    padding-bottom: 8px;
+}
+
+.slideshow {
+    width: 100%;
+    max-width: 880px;
+    margin: 0 auto;
+    height: 380px;
+    border: 5px solid white;
+    border-radius: 8px;
+    box-shadow: 10px 15px 15px rgb(94, 69, 6);
+    padding-top: 32px;
+    overflow: hidden;
+}
+
+.slideshow--wrapper {
+    max-width: 880px;
+    display: flex;
+    animation: slide 32s infinite;
+}
+
+.slideshow--wrapper-mini {
+    padding: 8px;
+    border: 1px solid rgba(169, 169, 169, 0.537);
+    background-color: rgba(82, 75, 75, 0.114);
+    border-radius: 8px;
+    margin: 0 24px;
+}
+
+@keyframes slide {
+    0% {
+        transform: translate(0);
+    }
+    9% {
+        transform: translateX(0);
+    }
+    18% {
+        transform: translateX(-100%);
+    }
+    27% {
+        transform: translateX(-100%);
+    }
+    36% {
+        transform: translateX(-200%);
+    }
+   
 }
