@@ -593,5 +593,8 @@ TESTIMONIALS
     36% {
         transform: translateX(-200%);
     }
-   
+}
+
+.testimonials__btn--wrapper {
+    margin-top: 40px;
 }
