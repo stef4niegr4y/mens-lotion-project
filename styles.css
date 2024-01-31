@@ -357,13 +357,14 @@ button:hover {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color:rgb(66, 66, 52);
+    background-color: #1c1d25;
     opacity: 0;
     transition: opacity 650ms ease;
+    z-index: 1;
 }
 
 .use__item--wrapper:hover {
-    opacity: 0.5;
+    opacity: 0.8;
 }
 
 .use__item--wrapper:hover .use__img {
@@ -387,15 +388,37 @@ button:hover {
     z-index: 3;
 }
 
-.use__item--description-title,
-.use__item--para {
-    color: white;
-}
-
 .use__item--description-title {
     padding-bottom: 8px;
     font-size: 16px;
 }
+
+.use__item--description-title,
+.use__item--para {
+    visibility: hidden;
+}
+
+.use__item:hover .use__item--description {
+    border: 1px solid rgba(169, 169, 169, 0.537);
+    background-color: rgba(82, 75, 75, 0.678);
+    border-radius: 8px;
+}
+
+.use__item:hover .use__item--description-title{
+    visibility: visible;
+    font-size: 24px;
+    font-weight: 450;
+    color: rgb(255, 255, 255);
+    opacity: 999;
+}
+
+.use__item:hover .use__item--para {
+    visibility: visible;
+    font-weight: 400;
+    color: white;
+}
+
+ 
 
 /* 
 
