@@ -221,8 +221,7 @@ button:hover {
 
 .about__container,
 .use__container,
-.testimonials__container,
-.contact__container  {
+.testimonials__container {
     padding: 40px 24px;
     width: 100%;
     max-width: 1200px;
@@ -637,6 +636,10 @@ CONTACT
     color: white;
 }
 
+.contact__text--wrapper {
+    padding: 32px;
+}
+
 .contact--text {
     font-size: 20px;
     font-weight: 600;
@@ -712,10 +715,12 @@ footer {
 .footer__link {
     padding: 0 16px 16px 0;
     font-size: 20px;
+    transition: all 300ms ease;
 }
 
 .footer__link:hover {
     text-decoration: underline;
+    color: gold;
 }
 
 .social__link {
@@ -725,6 +730,12 @@ footer {
 .social__link--img {
     filter: invert(1);
     width: 24px;
+    transition: all 280ms ease;
+}
+
+.social__link--img:hover, 
+.footer__link:hover {
+    transform:scale(1.1);
 }
 
 .footer__copyright {
