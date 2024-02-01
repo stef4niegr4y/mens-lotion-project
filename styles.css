@@ -28,7 +28,8 @@ nav {
 }
 
 
-.logo--wrapper {
+.logo--wrapper,
+.footer__logo--wrapper {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -61,6 +62,10 @@ a {
     color: rgba(255, 255, 255, 0.895);
     font-weight: 600;
     letter-spacing: .04rem;
+}
+
+a:hover {
+    text-decoration: underline;
 }
 
 .nav__link--anchor:hover,
@@ -609,7 +614,7 @@ CONTACT
 .contact__container {
     text-align: center;
     background-image: url("./barber-tools-bg.webp");
-    background-repeat: repeat;
+    background-repeat: repeat-x;
     background-size: cover;
 }
 
@@ -684,4 +689,45 @@ FOOTER
 
 footer {
     background-color: rgba(0, 0, 0, 0.925);
+}
+
+.footer__row {
+    text-align: center;
+}
+
+.footer--text {
+    padding-right: 70px;
+}
+
+.footer__logo--wrapper {
+    padding-bottom: 8px;
+}
+
+.footer__list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer__link {
+    padding: 0 16px 16px 0;
+    font-size: 20px;
+}
+
+.footer__link:hover {
+    text-decoration: underline;
+}
+
+.social__link {
+    padding: 8px;
+}
+
+.social__link--img {
+    filter: invert(1);
+    width: 24px;
+}
+
+.footer__copyright {
+    color: white;
+    padding: 24px 0 16px 0;
 }
