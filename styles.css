@@ -216,7 +216,8 @@ button:hover {
 
 .about__container,
 .use__container,
-.testimonials__container {
+.testimonials__container,
+.contact__container  {
     padding: 40px 24px;
     width: 100%;
     max-width: 1200px;
@@ -597,4 +598,90 @@ TESTIMONIALS
 
 .testimonials__btn--wrapper {
     margin-top: 40px;
+}
+
+/* 
+
+CONTACT
+
+*/
+
+.contact__container {
+    text-align: center;
+    background-image: url("./barber-tools-bg.webp");
+    background-repeat: repeat;
+    background-size: cover;
+}
+
+.contact__row {
+   display: flex;
+   width: 100%;
+   max-width: 1200px;
+   margin: 0 auto;
+}
+
+.contact__info-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact__title {
+    font-size: 48px;
+    font-weight: 700;
+    padding-bottom: 16px;
+    color: white;
+}
+
+.contact--text {
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: .04rem;
+    padding-left: 8px;
+    color: white;
+}
+
+form {
+    border: 2px solid white;
+    border-radius: 8px;
+    background-color: rgba(54, 50, 24, 0.365);
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+}
+
+.contact__form--title {
+    color: white;
+    margin-top: 32px;
+}
+
+.contact_btn {
+    max-width: 200px;
+    margin: 0 auto;
+}
+
+.message--text {
+    font-weight: 500;
+}
+
+input {
+    height: 32px;
+}
+
+textarea {
+    height: 100px;
+    padding-bottom: 16px;
+}
+
+label {
+    color: white;
+}
+
+/*
+
+FOOTER 
+
+*/
+
+footer {
+    background-color: rgba(0, 0, 0, 0.925);
 }
