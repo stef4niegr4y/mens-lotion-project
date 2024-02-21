@@ -28,11 +28,19 @@ nav {
 }
 
 
-.logo--wrapper,
-.footer__logo--wrapper {
+.logo--wrapper {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.footer__logo--wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 32px 0;
 }
 
 
@@ -696,14 +704,6 @@ footer {
 
 .footer__row {
     text-align: center;
-}
-
-.footer--text {
-    padding-right: 70px;
-}
-
-.footer__logo--wrapper {
-    padding-bottom: 8px;
 }
 
 .footer__list {
